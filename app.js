@@ -31,3 +31,7 @@ function currentTime() {
   second.style.rotate = `${s * 6 - 90}deg`;
 }
 currentTime();
+let tictac = new Audio("./tictac.mp3");
+let tictactime = setInterval(() => {
+  tictac.play();
+}, 100);
