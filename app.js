@@ -29,9 +29,7 @@ function currentTime() {
   hour.style.rotate = `${hourdeg}deg`;
   minut.style.rotate = `${minutdeg - 90}deg`;
   second.style.rotate = `${s * 6 - 90}deg`;
+  let tictac = new Audio("./tictac.mp3");
+  window.onload = tictac.play();
 }
 currentTime();
-let tictac = new Audio("./tictac.mp3");
-let tictactime = setInterval(() => {
-  tictac.play();
-}, 100);
