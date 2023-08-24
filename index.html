@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oclock</title>
+  </head>
+  <body>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        height: 100%;
+      }
+      .container {
+        width: 100%;
+        max-width: 1200px;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 0 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+      h1 {
+        padding-top: 40px;
+        font-size: 100px;
+      }
+      .circle {
+        width: 500px;
+        height: 500px;
+        border-radius: 50%;
+        background: #0040ff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .hour {
+        width: 200px;
+        height: 20px;
+        background: #000;
+        position: absolute;
+        transform: translate(100px);
+        rotate: 90deg;
+        border-radius: 0 50% 50% 0;
+        z-index: 4;
+      }
+      .minut {
+        width: 200px;
+        height: 15px;
+        background: #000;
+        position: absolute;
+        transform: rotate(30deg);
+        transform: translate(100px);
+        rotate: 40deg;
+        border-radius: 0 50% 50% 0;
+        z-index: 4;
+      }
+      .second {
+        width: 200px;
+        height: 10px;
+        background: #000;
+        position: absolute;
+        transform: rotate(10deg);
+        transform: translate(100px);
+        rotate: 0deg;
+        border-radius: 0 50% 50% 0;
+        z-index: 4;
+      }
+      .center {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #fff;
+        z-index: 5;
+      }
+      span {
+        position: absolute;
+        transform: translate(210px);
+        font-size: 40px;
+        color: #000;
+        background: #fff;
+        padding: 5px 20px;
+        border-radius: 50%;
+      }
+      .num1 {
+        rotate: 300deg;
+      }
+      .num2 {
+        rotate: 330deg;
+      }
+      .num3 {
+        rotate: 360deg;
+      }
+      .num4 {
+        rotate: 30deg;
+      }
+      .num5 {
+        rotate: 60deg;
+      }
+      .num6 {
+        rotate: 90deg;
+      }
+      .num7 {
+        rotate: 120deg;
+      }
+      .num8 {
+        rotate: 150deg;
+      }
+      .num9 {
+        rotate: 180deg;
+      }
+      .num10 {
+        rotate: 210deg;
+        padding: 5px 9px;
+      }
+      .num11 {
+        rotate: 240deg;
+        padding: 5px 9px;
+      }
+      .num12 {
+        rotate: 270deg;
+        padding: 5px 9px;
+      }
+    </style>
+    <div class="container">
+      <h1 id="oclock"></h1>
+      <div class="circle">
+        <div class="center"></div>
+        <div id="hour" class="hour"></div>
+        <div id="minut" class="minut"></div>
+        <div id="second" class="second"></div>
+        <span class="num1">1</span><span class="num2">2</span
+        ><span class="num3">3</span><span class="num4">4</span
+        ><span class="num5">5</span><span class="num6">6</span
+        ><span class="num7">7</span><span class="num8">8</span
+        ><span class="num9">9</span><span class="num10">10</span
+        ><span class="num11">11</span><span class="num12">12</span>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
